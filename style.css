@@ -1,0 +1,168 @@
+
+/*Change all elements to use border-box*/
+html{
+  box-sizing: border-box;
+}
+*,*:before, *:afer{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+/*Layout*/
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1170px;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='col-'] {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 48em) {
+  [class*='col-'] {
+    float: left;
+  }
+  .pull-right-sm {
+    float:right;
+}
+  .pull-left-sm {
+    float:left;
+}
+    /* Half*/
+  .col-1-2 {
+    width: 50%;
+   }
+    /* Column Third */
+    .col-1-3 {
+      width: 33.3333%;
+  }
+  /* Column Two Thirds */
+  .col-2-3 {
+      width: 66.6666%;
+  }
+}
+
+@media only screen and (max-width : 47.9375em) {
+  
+      .remove-gutter-xs {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 0;
+  border-bottom: 0.8rem solid black;
+} 
+ .textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  width:60rem;
+  padding: 2rem;
+}
+
+li{
+  list-style-type: none;
+} 
+
+.width{
+  width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.innerWidth{
+  width:100%;
+}
+
+
+/* .description{
+  white-space: pre-wrap;
+} */
+
+
+.time-block{
+  text-align: center;
+  border-radius: 0.9rem;
+  font-style: italic;
+  background: blue;
+  color:white;
+  padding: 2rem;
+
+} 
+
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+ .past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+} 
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+  font-size: 2.2rem;
+  padding: 2rem;
+  outline: none;
+}
+ 
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+} 
+
+/*Theme*/
+
+.background-primary {
+  background: #1ef730; /*Orange*/
+}
+.background-secondary {
+  background: #4800ef; /*Blue*/
+}
+.background-tertiary {
+  background: #df306d; /*Green*/
+}
